@@ -1,5 +1,8 @@
 package es.deusto.prog3.cap00.ejercicios;
 
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
 import javax.swing.*;
@@ -27,11 +30,32 @@ public class VentanaConfirmacionLenta {
 	public static void main(String[] args) {
 		// TODO Desarrollar la clase de acuerdo a los comentarios de la cabecera
 		JFrame ventana = new JFrame();
+		ventana.setSize(200, 100);
+		ventana.setLocation(2000, 0);
+		ventana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
+		JPanel pCentral = new JPanel();
+		JTextField textFieldUsuario = new JTextField( "Usuario" );
+		ventana.add(textFieldUsuario);
+		pCentral.add(textFieldUsuario);
+		ventana.add(pCentral, BorderLayout.CENTER);
+		
+		JButton bAceptar = new JButton("Aceptar");
+		ventana.add(bAceptar, BorderLayout.SOUTH);
+		
+		bAceptar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Presionando botón");
+				procesoConfirmar();
+			}
+		});
+		
 		ventana.setVisible(true);
 		System.out.println( "Fin" );
 		verHilos();
-		// Comentario de prueba
-		// Comentario 2
+		
 	}
 
 	private static void verHilos() {
