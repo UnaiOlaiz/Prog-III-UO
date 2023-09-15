@@ -4,15 +4,16 @@ package Repaso_JuegoCoche;
 
 public class CocheJuego extends Coche {
 	
-	JLabelCoche coche;
+	Coche coche = new Coche();
+	JLabelCoche labelCoche;
 	
-
+	@Override
 	public void setPosX(double posX) {
-		coche.setPosX(coche.getPosX());
+		super.setPosX(coche.getPosX());
 	}
-
+	@Override
 	public void setPosY(double posY) {
-		coche.setPosY(coche.getPosY());
+		super.setPosY(coche.getPosY());
 	}
 	
 	

@@ -81,8 +81,8 @@ public class Coche {
 	 */
 	 public void mueve( double tiempoDeMovimiento ) {
 		 
-		 posX += miVelocidad * tiempoDeMovimiento  * Math.cos(miDireccionActual);
-		 posY += miVelocidad * tiempoDeMovimiento  * Math.sin(miDireccionActual);
+		 posX += miVelocidad * tiempoDeMovimiento * Math.cos(miDireccionActual);
+		 posY += miVelocidad * tiempoDeMovimiento * Math.sin(miDireccionActual);
 		 
 	 } 
 	

@@ -1,25 +1,42 @@
 package Repaso_JuegoCoche;
 
+import java.awt.*;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class JLabelCoche extends Coche {
+public class JLabelCoche extends JLabel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	// Paso 5
 	public static void main(String[] args) {
 		
-		JFrame frame = new JFrame("JLabel con Imagen PNG");
+		ImageIcon imagenIcon = new ImageIcon("C:\\Users\\unaio\\Downloads\\coche.png");
+		
+		int nuevoAncho = 100;
+		int nuevoAlto = 100;
+		
+		Image imgIcon = imagenIcon.getImage();
+		Image imgEscalada = imgIcon.getScaledInstance(nuevoAncho, nuevoAlto, Image.SCALE_SMOOTH);
+		
+		ImageIcon imagenEscalada = new ImageIcon(imgEscalada);
+		
+		JLabel labelEscalado = new JLabel(imagenEscalada);
+		
+		JFrame frame = new JFrame("Imagen escalada");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(100, 100);
-		
-		ImageIcon imagenIcon = new ImageIcon("coche.png");
-		
-		JLabel imagenLabel = new JLabel(imagenIcon);
-		
-		frame.add(imagenLabel);
-		
+		frame.setSize(400, 400);
+		frame.getContentPane().add(labelEscalado);
+		frame.pack();
 		frame.setVisible(true);
+		
+		
+		
 	}
 	
 

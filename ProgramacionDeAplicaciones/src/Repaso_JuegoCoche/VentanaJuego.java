@@ -20,7 +20,8 @@ public class VentanaJuego extends JFrame {
 	// Pasos 1 y 2
 	public static void main(String[] args) {
 		
-		Coche coche = new Coche();
+		CocheJuego cocheJuego = new CocheJuego();
+		
 		
 		JFrame ventana = new JFrame();
 		ventana.setLayout(new BorderLayout());
@@ -32,6 +33,7 @@ public class VentanaJuego extends JFrame {
 		JPanel panelPrincipal = new JPanel();
 		panelPrincipal.setBackground(Color.white);
 		panelPrincipal.setLayout(null);
+								
 		ventana.add(panelPrincipal, BorderLayout.CENTER);
 		
 		JPanel panelBotonera = new JPanel();
@@ -43,8 +45,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				coche.acelera(5);
-				System.out.println(coche.getMiVelocidad());
+				cocheJuego.acelera(5);
+				System.out.println(cocheJuego.getMiVelocidad());
 			}
 		});
 		
@@ -54,7 +56,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				coche.acelera(-5);
+				cocheJuego.acelera(-5);
+				System.out.println(cocheJuego.getMiVelocidad());
 			}
 		});
 		JButton botonGiraIzq = new JButton("Gira Izq.");
@@ -63,8 +66,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				coche.gira(-10);
-				System.out.println(coche.getMiDireccionActual());
+				cocheJuego.gira(-10);
+				System.out.println(cocheJuego.getMiDireccionActual());
 			}
 		});
 		
@@ -74,8 +77,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				coche.gira(10);
-				System.out.println(coche.getMiDireccionActual());
+				cocheJuego.gira(10);
+				System.out.println(cocheJuego.getMiDireccionActual());
 			}
 		});
 		
@@ -91,7 +94,7 @@ public class VentanaJuego extends JFrame {
 			public void run() {
 				
 				while(ventana.isActive()) {
-					coche.mueve(40);
+					cocheJuego.mueve(40);
 					try {
 						Thread.sleep(40);
 					} catch (InterruptedException e) {
