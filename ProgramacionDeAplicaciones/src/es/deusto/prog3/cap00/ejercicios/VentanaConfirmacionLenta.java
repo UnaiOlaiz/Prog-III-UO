@@ -31,8 +31,8 @@ public class VentanaConfirmacionLenta {
 		// TODO Desarrollar la clase de acuerdo a los comentarios de la cabecera
 		JFrame ventana = new JFrame();
 		ventana.setSize(200, 100);
-		ventana.setLocation(2000, 0);
 		ventana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		ventana.setVisible(true);
 		
 		JPanel pCentral = new JPanel();
 		JTextField textFieldUsuario = new JTextField( "Usuario" );
@@ -52,9 +52,8 @@ public class VentanaConfirmacionLenta {
 			}
 		});
 		
-		ventana.setVisible(true);
-		System.out.println( "Fin" );
 		verHilos();
+		System.out.println( "Fin" );
 		
 	}
 
