@@ -21,7 +21,8 @@ public class VentanaJuego extends JFrame {
 	public static void main(String[] args) {
 		
 		CocheJuego cocheJuego = new CocheJuego();
-		
+		JLabelCoche labelCoche = new JLabelCoche();
+		labelCoche.setVisible(true);
 		
 		JFrame ventana = new JFrame();
 		ventana.setLayout(new BorderLayout());
@@ -33,6 +34,8 @@ public class VentanaJuego extends JFrame {
 		JPanel panelPrincipal = new JPanel();
 		panelPrincipal.setBackground(Color.white);
 		panelPrincipal.setLayout(null);
+		
+		panelPrincipal.add(labelCoche);
 								
 		ventana.add(panelPrincipal, BorderLayout.CENTER);
 		

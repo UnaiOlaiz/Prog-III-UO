@@ -1,6 +1,7 @@
 package es.deusto.prog3.cap00.ejercicios;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -47,8 +48,22 @@ public class VentanaConfirmacionLenta {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				bAceptar.setEnabled(false);
 				System.out.println("Presionando botón");
-				procesoConfirmar();
+				bAceptar.setForeground(Color.red);
+				Thread hilo = new Thread() {
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						System.out.println("Inicio proceso");
+						// System.out.println(hilo.isAlive() + " " + hilo.getState());
+						procesoConfirmar();
+						System.out.println("Fin proceso");
+						bAceptar.setEnabled(true);
+					}
+				};
+				// procesoConfirmar(); en vez de hacerlo desde el escuchador que lo haga el hilo
+				hilo.start();
 			}
 		});
 		
@@ -62,5 +77,10 @@ public class VentanaConfirmacionLenta {
 			System.out.println( " " + hilo.getName() + " " + hilo.isDaemon());
 		}
 	}  
+	
+	// Podría hacerse clase interna con nombre
+	private static class MiHilo extends Thread{
+		
+	}
 
 }
