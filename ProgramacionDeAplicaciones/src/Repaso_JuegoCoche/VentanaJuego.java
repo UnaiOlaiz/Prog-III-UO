@@ -17,13 +17,10 @@ public class VentanaJuego extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private static Thread miHilo;
 
+	
 	// Pasos 1 y 2
 	public static void main(String[] args) {
-		
-		CocheJuego cocheJuego = new CocheJuego();
-		JLabelCoche labelCoche = new JLabelCoche();
-		labelCoche.setVisible(true);
-		
+
 		JFrame ventana = new JFrame();
 		ventana.setLayout(new BorderLayout());
 		ventana.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -31,12 +28,16 @@ public class VentanaJuego extends JFrame {
 		ventana.setSize(600, 400);
 		ventana.setTitle("Juego de Coche");
 		
+		// Paso 7 (Añadimos el coche)
+		Coche coche = new Coche();
+
 		JPanel panelPrincipal = new JPanel();
 		panelPrincipal.setBackground(Color.white);
 		panelPrincipal.setLayout(null);
 		
+		// Paso 5
+		JLabelCoche labelCoche = new JLabelCoche();
 		panelPrincipal.add(labelCoche);
-								
 		ventana.add(panelPrincipal, BorderLayout.CENTER);
 		
 		JPanel panelBotonera = new JPanel();
@@ -48,8 +49,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				cocheJuego.acelera(5);
-				System.out.println(cocheJuego.getMiVelocidad());
+				coche.acelera(5);
+				System.out.println(coche.getMiVelocidad());
 			}
 		});
 		
@@ -59,8 +60,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				cocheJuego.acelera(-5);
-				System.out.println(cocheJuego.getMiVelocidad());
+				coche.acelera(-5);
+				System.out.println(coche.getMiVelocidad());
 			}
 		});
 		JButton botonGiraIzq = new JButton("Gira Izq.");
@@ -69,8 +70,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				cocheJuego.gira(-10);
-				System.out.println(cocheJuego.getMiDireccionActual());
+				coche.gira(-10);
+				System.out.println(coche.getMiDireccionActual());
 			}
 		});
 		
@@ -80,8 +81,8 @@ public class VentanaJuego extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				cocheJuego.gira(10);
-				System.out.println(cocheJuego.getMiDireccionActual());
+				coche.gira(10);
+				System.out.println(coche.getMiDireccionActual());
 			}
 		});
 		
@@ -97,7 +98,7 @@ public class VentanaJuego extends JFrame {
 			public void run() {
 				
 				while(ventana.isActive()) {
-					cocheJuego.mueve(40);
+					coche.mueve(40);
 					try {
 						Thread.sleep(40);
 					} catch (InterruptedException e) {
