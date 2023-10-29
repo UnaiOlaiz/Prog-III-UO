@@ -1,4 +1,4 @@
-package Entrega;
+package Practica6;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package Entrega;
+package Practica6;
 
 /** Permite crear objetos municipio con información de población, provincia y comunidad autónoma
  */

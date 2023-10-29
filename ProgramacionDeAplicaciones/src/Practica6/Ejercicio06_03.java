@@ -1,4 +1,4 @@
-package Entrega;
+package Practica6;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

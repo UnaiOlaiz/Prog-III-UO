@@ -1,4 +1,4 @@
-package Entrega;
+package Practica6;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
