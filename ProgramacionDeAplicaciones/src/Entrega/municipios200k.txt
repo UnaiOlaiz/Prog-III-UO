@@ -1,0 +1,68 @@
+1	Alicante	338577	Alicante	Comunidad Valenciana
+2	Almería	201775	Almería	Andalucía
+3	Badalona	223506	Barcelona	Cataluña
+4	Barcelona	1636193	Barcelona	Cataluña
+5	Bilbao	344127	Vizcaya	Euskadi
+6	Cartagena	216961	Murcia	Murcia
+7	Córdoba	319515	Córdoba	Andalucía
+8	Elche	235580	Alicante	Comunidad Valenciana
+9	Gijón	267706	Asturias	Asturias
+10	Granada	228682	Granada	Andalucía
+11	HospitaletdeLlobregat	265444	Barcelona	Cataluña
+12	JerezdelaFrontera	212730	Cádiz	Andalucía
+13	LaCoruña	244700	LaCoruña	Galicia
+14	LasPalmasdeGranCanaria	378797	LasPalmas	Canarias
+15	Madrid	3280782	Madrid	Madrid
+16	Málaga	579076	Málaga	Andalucía
+17	Móstoles	208761	Madrid	Madrid
+18	Murcia	462979	Murcia	Murcia
+19	Oviedo	215167	Asturias	Asturias
+20	PalmadeMallorca	415940	Baleares	Baleares
+21	Pamplona	203418	Navarra	Navarra
+22	Sabadell	215760	Barcelona	Cataluña
+23	SantaCruzdeTenerife	208688	SantaCruzdeTenerife	Canarias
+24	Sevilla	681998	Sevilla	Andalucía
+25	Tarrasa	224114	Barcelona	Cataluña
+26	Valencia	792492	Valencia	Comunidad Valenciana
+27	Valladolid	295639	Valladolid	Castilla y León
+28	Vigo	292374	Pontevedra	Galicia
+29	Vitoria	253672	Álava	Euskadi
+30	Zaragoza	673010	Zaragoza	Aragón
+65	Santiago de Compostela	98 179	La Coruña	 Galicia
+66	Lugo	97 211	 Lugo	 Galicia
+67	Lorca	97 151	 Región de Murcia
+68	Rivas-Vaciamadrid	96 690	 Comunidad de Madrid
+69	Las Rozas de Madrid	95 725	 Comunidad de Madrid
+70	San Cugat del Vallés	95 725	 Barcelona	 Cataluña
+71	Cáceres	95 456	 Cáceres	 Extremadura
+72	San Fernando	94 120	 Cádiz	 Andalucía
+73	San Sebastián de los Reyes	91 083	 Comunidad de Madrid
+74	Mijas	89 502	 Málaga	 Andalucía
+75	El Puerto de Santa María	89 435	 Cádiz	 Andalucía
+76	Cornellá de Llobregat	89 039	 Barcelona	 Cataluña
+77	Pozuelo de Alarcón	87 728	 Comunidad de Madrid
+78	El Ejido	87 500	 Almería	 Andalucía
+79	Chiclana de la Frontera	87 493	 Cádiz	 Andalucía
+80	Guadalajara	87 452	 Guadalajara	 Castilla-La Mancha
+81	Melilla	85 170	 Melilla
+82	Torrente	85 142	Valencia	 Comunidad Valenciana
+83	Toledo	85 085	 Toledo	 Castilla-La Mancha
+84	Vélez-Málaga	83 899	 Málaga	 Andalucía
+85	Torrevieja	83 547	Alicante	 Comunidad Valenciana
+86	San Baudilio de Llobregat	83 371	 Barcelona	 Cataluña
+87	Talavera de la Reina	83 247	 Toledo	 Castilla-La Mancha
+88	Fuengirola	83 226	 Málaga	 Andalucía
+89	Ceuta	83 117	 Ceuta
+90	Arona	82 982	Santa Cruz de Tenerife	 Canarias
+91	Pontevedra	82 828	 Pontevedra	 Galicia
+92	Orihuela	80 784	Alicante	 Comunidad Valenciana
+93	Coslada	80 596	 Comunidad de Madrid
+94	Valdemoro	79 100	 Comunidad de Madrid
+95	Rubí	79 007	 Barcelona	 Cataluña
+96	Manresa	77 459	 Barcelona	 Cataluña
+97	Guecho	76 365	 Vizcaya	 País Vasco
+98	Palencia	76 302	 Palencia	 Castilla y León
+99	Alcalá de Guadaíra	75 917	 Sevilla	 Andalucía
+100	Gandía	75 911	Valencia	 Comunidad Valenciana
+101	Avilés	75 877	 Principado de Asturias
+102	Ciudad Real	74 850	 Ciudad Real	 Castilla-La Mancha
