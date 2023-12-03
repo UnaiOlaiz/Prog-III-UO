@@ -34,7 +34,7 @@ public class ListaDeReproduccion implements ListModel<String> {
 		}
 	}
 	
-	/** Constructor de lista de reproducción, crea una lista vacía
+	/** Constructor de lista de reroducción, crea una lista vacía
 	 */
 	public ListaDeReproduccion() {
 		ficherosLista = new ArrayList<>();
